@@ -125,6 +125,7 @@ class TravellingSalesmanProblem:
 
         self._update_distance_matrix()
 
+
     def evaluate_travelled_distance(self, travel_order: List[int]) -> float:
         current_travel_order = np.array(travel_order) 
         next_travel_order = np.roll(current_travel_order, -1)
@@ -147,3 +148,4 @@ class TravellingSalesmanProblemShortForm:
         current_travel_order = np.array(travel_order) 
         next_travel_order = np.roll(current_travel_order, -1)
         return self.distance_matrix[current_travel_order, next_travel_order].sum()
+    
