@@ -103,7 +103,7 @@ class GreedyAlgorithmV2:
 
         objective = tsp.evaluate_travelled_distance(travel_order)
         output_dict = {
-            'variables': travel_order,
+            'variables': travel_order.tolist(),
             'objective': objective
         }
         return output_dict
